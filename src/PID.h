@@ -41,6 +41,9 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+
+private:
+  bool first_step_; // used to skip the use of the derivative part in the first step
 };
 
 #endif /* PID_H */
